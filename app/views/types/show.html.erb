@@ -1,0 +1,14 @@
+<h1><%= @type.name %></h1>
+
+<h3><%= @type.description %></h3>
+
+<h3><a href="/types/<%= @type.id %>/edit">Edit</a></h3>
+
+<br />
+<a href="/types/<%= @type.id %>"
+ data-confirm="Are you sure?"
+ data-method="delete"
+ rel="nofollow"><button class="btn btn-danger">Delete</button></a>
+
+<a href="/types"><button class="btn btn-success">Go back</button></a>
+

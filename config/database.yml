@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: brews_development
+
+test:
+  adapter: postgresql
+  database: brews_test

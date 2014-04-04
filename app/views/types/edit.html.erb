@@ -1,0 +1,14 @@
+<h1>Edit <%= @type.name %></h1>
+
+<form class="smallWrapper" action="/types/<%= @type.id %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+<%= render('form') %>
+  <button class="btn btn-success">Update beer type</button>
+  &nbsp;
+  &nbsp;
+  <div class=btn-group inline>
+  <a href="/types/"><button class="btn btn-danger">Cancel</button>
+  </div>
+</form>
+
+

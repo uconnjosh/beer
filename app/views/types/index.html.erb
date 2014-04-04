@@ -1,0 +1,9 @@
+<h1>The Tailored Brew</h1>
+<ul>
+<% @types.each do |type| %>
+<li><a href="/types/<%= type.id %>"><%= type.name %></a></li>
+<% end %>
+</ul>
+<br />
+<br />
+<a href="/types/new"><button>Add a new type</button></a>
