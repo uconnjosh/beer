@@ -1,0 +1,12 @@
+<h1>Edit <%= @brew.name %></h1>
+
+<form class="smallWrapper" action="/brews/<%= @brew.id %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+<%= render('form') %>
+  <button class="btn btn-success">Update beer</button>
+  &nbsp;
+  &nbsp;
+  <div class=btn-group inline>
+  <a href="/brews/"><button class="btn btn-danger">Cancel</button>
+  </div>
+</form>

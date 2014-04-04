@@ -1,0 +1,13 @@
+<h1><%= @brew.company %></h1>
+<h1><%= @brew.name %></h1>
+<p><%= @brew.description %></p>
+
+<p><a href="/brews">Go Back</a></p>
+<p><a href="/brews/<%= @brew.id %>/edit">Edit</a></p>
+<a href="/brews/<%= @brew.id %>"
+ data-confirm="Are you sure?"
+ data-method="delete"
+ rel="nofollow"><button class="btn btn-danger">Delete</button></a>
+
+
+
