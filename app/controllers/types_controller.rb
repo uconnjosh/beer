@@ -39,5 +39,4 @@ class TypesController < ApplicationController
     @type.destroy
     redirect_to('/types')
   end
-
 end

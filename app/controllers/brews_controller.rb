@@ -5,11 +5,13 @@ class BrewsController < ApplicationController
   end
 
   def new
+
     render('brews/new.html.erb')
   end
 
   def create
-    @brew = Brew.create(params[:brew])
+    @type = Type.find(params[:type_id])
+    @brew = @type.brews.create(params[:brew])
     render('/brews/index.html.erb')
   end
 

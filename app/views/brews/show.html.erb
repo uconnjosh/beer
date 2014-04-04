@@ -1,13 +1,24 @@
-<h1><%= @brew.company %></h1>
 <h1><%= @brew.name %></h1>
-<p><%= @brew.description %></p>
+<h3>Company: <%= @brew.company %></h3>
+<h3><% @brew.types.each do |tag| %>
+    Type: <%= tag.name %>
+<% end %></h3>
+<div class="well well-lg">
+  <p><%= @brew.description %></p>
+</div>
 
-<p><a href="/brews">Go Back</a></p>
-<p><a href="/brews/<%= @brew.id %>/edit">Edit</a></p>
+<div class="btn-group inline">
+<a href="/brews/<%= @brew.id %>/edit"><button class="jumbotron btn btn-danger">Edit</button></a>
+</div>
+&nbsp;
+&nbsp;
+&nbsp;
+<div class=btn-group inline>
 <a href="/brews/<%= @brew.id %>"
  data-confirm="Are you sure?"
  data-method="delete"
- rel="nofollow"><button class="btn btn-danger">Delete</button></a>
+ rel="nofollow"><button class="btn btn-primary jumbotron">Delete</button></a>
+</div>
 
 
 
