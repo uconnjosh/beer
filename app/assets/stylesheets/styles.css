@@ -5,3 +5,15 @@ li.big {
 select.big {
   width: 1000px;
 }
+
+img.brew_pic {
+  margin-left: 20px;
+  padding: 5px;
+  width: 90px;
+  height: auto;
+
+}
+
+.floater {
+  float: left;
+}

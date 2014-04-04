@@ -1,14 +1,19 @@
+<img class="brew_pic" src=<%= @brew.picture %> />
+<div class="floater">
 <h1><%= @brew.name %></h1>
 <h3>Company: <%= @brew.company %></h3>
 <h3><% @brew.types.each do |tag| %>
     Type: <%= tag.name %>
 <% end %></h3>
+</div><br>
+
+
 <div class="well well-lg">
   <p><%= @brew.description %></p>
 </div>
 
 <div class="btn-group inline">
-<a href="/brews/<%= @brew.id %>/edit"><button class="jumbotron btn btn-danger">Edit</button></a>
+<a href="/brews/<%= @brew.id %>/edit"><button class="btn btn-danger">Edit</button></a>
 </div>
 &nbsp;
 &nbsp;
@@ -17,8 +22,7 @@
 <a href="/brews/<%= @brew.id %>"
  data-confirm="Are you sure?"
  data-method="delete"
- rel="nofollow"><button class="btn btn-primary jumbotron">Delete</button></a>
+ rel="nofollow"><button class="btn btn-primary">Delete</button></a>
 </div>
-
 
 

@@ -12,7 +12,7 @@ class BrewsController < ApplicationController
   def create
     @type = Type.find(params[:type_id])
     @brew = @type.brews.create(params[:brew])
-    render('/brews/index.html.erb')
+    redirect_to('/brews/')
   end
 
   def show

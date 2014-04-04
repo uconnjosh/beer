@@ -6,7 +6,11 @@
 <br>
 
 <label for="brew_description">Description</label><br>
-<textarea class ="form-control" rows="3" id="content" name="brew[description]" type="text">Description</textarea><br>
+<textarea class ="form-control" rows="3" id="content" name="brew[description]" type="text"></textarea>
+<br />
+<label for="brew_picture">Picture URL:</label>
+<input class="form-control" id="brew_picture" name="brew[picture]" type="text">
+<br />
 
  <select class='btn btn-success big' name="type_id">
      <%= Type.all.each do |type| %>
