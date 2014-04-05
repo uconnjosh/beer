@@ -1,0 +1,17 @@
+<label for="customer_name">Name</label>
+<input class="form-control" id="customer_name" name="customer[name]" type="text">
+<br />
+<label for="choice_1">Select first type of beer</label>
+ <select class='btn btn-success big' name="customer[choice_1]">
+     <%= Type.all.each do |type| %>
+    <option value="<%= type.id %>"><%= type.name %></option>
+    <% end %>
+</select>
+
+<label for="choice_1">Select second type of beer</label>
+ <select class='btn btn-success big' name="customer[choice_2]">
+     <%= Type.all.each do |type| %>
+    <option value="<%= type.id %>"><%= type.name %></option>
+    <% end %>
+</select>
+<br><br>

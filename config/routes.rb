@@ -16,4 +16,10 @@ Brews::Application.routes.draw do
  match('/brews/:id/edit', {:via => :get, :to => 'brews#edit'})
  match('/brews/:id', {:via => [:patch, :put], :to => 'brews#update'})
  match('/brews/:id/', {:via => :delete, :to => 'brews#delete'})
+
+ #### Customers ####
+ match('/', {:via => :get, :to => 'customers#index'})
+ match('/customers', {:via => :post, :to => 'customers#create'})
+ match('/customers/:id', {:via => :get, :to => 'customers#show'})
 end
+
